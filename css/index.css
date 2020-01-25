@@ -3,13 +3,13 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 a{
 	text-decoration: none;
 	cursor: pointer;
-	opacity: 0.9;
+	opacity: 0.7;
 }
 
 a:hover{
@@ -46,6 +46,7 @@ ul{
 
 #navbar li{
 	margin: 0 15px;
+	text-shadow: 2px 2px 2px #000; 
 }
 
 /* HERO */
@@ -65,3 +66,94 @@ ul{
 	font-size: 3em;
 	margin-bottom: 15px;
 }
+
+
+/* PROPÓSITO */
+.proposito{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 50px;
+}
+
+.proposito h3{
+	font-size: 2rem;
+	margin-bottom: 35px;
+	color: #2D132C;
+	text-align: center;
+}
+
+.proposito p{
+	max-width: 800px;
+	margin-bottom: 35px;
+	color: #2D132C;
+	text-align: center;
+}
+
+.proposito hr{
+	width: 200px;
+	height: 2px;
+	background-color: #2D132C;
+	margin-bottom: 70px;
+	border: none;
+}
+
+/* MOTIVOS */
+.motivos{
+	background-color: #2D132C;
+	display: flex  !important;
+	flex-direction: column  !important;
+	align-items: center;
+	padding: 100px 50px;
+}
+
+.motivos h3{
+	font-size: 2rem;
+	margin-bottom: 35px;
+	color: #fff;
+	text-align: center;
+}
+
+.motivos p{
+	max-width: 800px;
+	margin-bottom: 35px;
+	color: #fff;
+	text-align: center;
+}
+
+.motivos hr{
+	width: 200px;
+	height: 2px;
+	background-color: #fff;
+	margin-bottom: 70px;
+	border: none;
+}
+
+.motivos .cards{
+	width: 100%;
+	display: flex;
+	padding: 3%;
+}
+
+.motivos .cards li{
+	padding: 0 30px;
+	text-align: center;
+	align-items: center;
+}
+
+.motivos .cards li i{
+	color: #EE4540;
+	font-size: 3.5rem;
+	margin-bottom: 30px;
+}
+
+.motivos .cards li h4{
+	font-size: 1.5rem;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.motivos .cards li p{
+	color: #fff;
+}
+
