@@ -51,6 +51,7 @@ ul{
 #navbar li{
 	margin: 0 15px;
 	text-shadow: 2px 2px 2px #000; 
+	padding: 15px;
 }
 
 /* HERO */
@@ -78,15 +79,16 @@ ul{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 100px 50px;
+	padding: 80px 50px;
 	background-attachment: fixed
 }
 
 .proposito h3{
-	font-size: 2rem;
+	font-size: 2em;
 	margin-bottom: 35px;
 	color: #2D132C;
 	text-align: center;
+	font-weight: bold;
 }
 
 .proposito p{
@@ -110,15 +112,16 @@ ul{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 100px 50px;
+	padding: 70px 50px;
 	background-attachment: fixed
 }
 
 .motivos h3{
-	font-size: 2rem;
+	font-size: 2em;
 	margin-bottom: 35px;
 	color: #fff;
 	text-align: center;
+	font-weight: bold;
 }
 
 .motivos p{
@@ -155,7 +158,7 @@ ul{
 }
 
 .motivos .cards li h4{
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	color: #fff;
 	margin-bottom: 30px;
 }
@@ -175,10 +178,11 @@ ul{
 }
 
 .contato h3{
-	font-size: 2rem;
+	font-size: 2em;
 	margin-bottom: 35px;
 	color: #fff;
 	text-align: center;
+	font-weight: bold;
 }
 
 .contato p{
@@ -227,11 +231,31 @@ ul{
 
 /* BAIXAR */
 .baixar{
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(2,50%);
 	align-items: center;
-	padding: 100px 50px;
-	background-attachment: fixed
+	justify-content: center;
+	padding: 60px 50px;
+	background-attachment: fixed;
+}
+
+.baixar #container{
+	display: grid;
+	grid-template-rows: repeat(2,50%);
+	align-items: center;
+	justify-items: center;
+}
+
+.baixar #container-carousel{
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+.baixar #carousel{
+	width: 40%;
+	align-items: center;
+	justify-items: center;
 }
 
 .baixar p{
@@ -242,14 +266,6 @@ ul{
 	text-align: center;
 }
 
-.baixar hr{
-	width: 200px;
-	height: 2px;
-	background-color: #2D132C;
-	margin-bottom: 70px;
-	border: none;
-}
-
 .baixar button{
 	padding: 15px;
 	background-color: #2D132C;
@@ -258,6 +274,9 @@ ul{
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
+	width: 30%;
+	grid-row-start: 2;
+	grid-row-end: 2;
 }
 
 .baixar button a{
@@ -270,13 +289,15 @@ footer{
 	display: flex;
 	flex-direction: column;
 	background-color: #EE4540;
-	padding: 50px 0;
+	padding: 15px 0;
 	align-items: center;
+	justify-content: center;
 }
 
 footer ul{
 	display: flex;
 	margin-bottom: 25px;
+	justify-content: center;
 }
 
 footer ul li{
@@ -297,8 +318,12 @@ footer p{
 	text-align: center;
 }
 
-/* RESPONSIVE */
+footer ul li a:active, footer ul li a:hover{
+	color: #fff;
+	text-decoration: none;
+}
 
+/* RESPONSIVE */
 @media (max-width: 700px){
 	header{
 		flex-direction: column;
@@ -308,12 +333,24 @@ footer p{
 	}
 	.hero .slogan h1{
 		font-size: 1.7em;
+		padding: 7%;
 	}
 }
 
 @media (max-width: 850px){
 	.motivos .cards{
 		flex-direction: column;
+	}
+	.baixar{
+		display: flex;
+		flex-direction: column;
+	}
+	.baixar button{
+		width: 50%;
+		margin-bottom: 8%;
+	}
+	.baixar #carousel{
+		width: 50%;
 	}
 
 
